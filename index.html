@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programma Viaggio</title>
     <link rel="stylesheet" href="stile.css">
+    <title>Programma Viaggio</title>
+    <style>
+        .alert-message {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            alert("ATTENZIONE: MANCA ANCORA UNA MACCHINA");
+        };
+    </script>
 </head>
 <body>
+    <div class="alert-message">MANCA ANCORA UNA MACCHINA</div>
+
     <div class="container">
         <div class="header">
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg" alt="Bandiera di Malta" class="flag">
@@ -55,7 +77,6 @@
             <img src="llOIP.jpg" alt="MyProtein" class="sponsor-logo">
             <img src="R.jpg" alt="MyProtein" class="sponsor-logo">
             <span class="peach-emoji">🍑</span>
-            
         </div>
     </div>
 </body>
